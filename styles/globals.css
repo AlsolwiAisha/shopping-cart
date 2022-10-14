@@ -14,7 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+.proInfo{
+  width: 100%;
+  height: 100%;
+}
+.proInfo img{
+  width: 100px;
+  height: 100px;
 
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
