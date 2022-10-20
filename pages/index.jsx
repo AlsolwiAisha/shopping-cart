@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import Product from '../components/product';
+import Cart from '../components/cart';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,7 +14,7 @@ const [products, setProducts] = useState();
         setProducts(res)
       })
       .catch((err) => console.error(err));
-  },[undefined]);
+  },[]);
   if (!products|| products==[]) {
     return <div>Loading...</div>;
   }
