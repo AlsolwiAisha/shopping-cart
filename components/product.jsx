@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Cart from './cart';
+import Stylse from'../styles/Product.module.css'
 import { useRouter } from 'next/router'
 const Product = ({products}) => {
   const [cart,setCart]=useState([]);
@@ -16,15 +17,15 @@ function addcart(img,price,title){
 function carts(){ }
 console.log(total)
   return( <>
-   <div className='allPro'>
+   <div className={Stylse.allPro}>
         {products.map((products) => {
            return (
-               <div className='proInfo' >
+               <div className={Stylse.proInfo} >
                  <img  src={products.image} alt="" />
-                 <div className='proTitle'>{products.title}</div>
+                 <div className={Stylse.proTitle}>{products.title}</div>
                  <div>{products.price} $</div>
                  <div>{products.category}</div>
-                 <button className='btn' onClick={()=>{addcart(products.image  ,products.price,products.title );carts()}} 
+                    <button className={Stylse.btn} onClick={()=>{addcart(products.image  ,products.price,products.title );carts()}} 
                 >Add to card</button>
                 </div>
            );
@@ -32,12 +33,12 @@ console.log(total)
       
   
    </div>
-   <div className="carts">
+   <div className={Stylse.carts}>
     <div><Cart cart={cart}/></div> 
-    <div>
+    <div className={Stylse.tot}>
      <p>cart: {cartnum} </p>   
-     <p>total={total}$</p>
-     <button> Pay</button>
+     <p>total={total.toFixed(2)}$</p>
+     <button className={Stylse.button}> Pay</button>
     </div>
 
  </div>
