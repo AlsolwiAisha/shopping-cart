@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Cart from './cart';
 import Stylse from'../styles/Product.module.css'
 import { useRouter } from 'next/router'
+import Image from 'next/image';
 const Product = ({products}) => {
   const [cart,setCart]=useState([]);
  const[cartnum,setCartnum]=useState(0);
@@ -21,7 +22,8 @@ console.log(total)
         {products.map((products) => {
            return (
                <div className={Stylse.proInfo} >
-                 <img  src={products.image} alt="" />
+                 <Image  src={products.image} alt={products.title}  width="120px"
+        height="120px" />
                  <div className={Stylse.proTitle}>{products.title}</div>
                  <div>{products.price} $</div>
                  <div>{products.category}</div>
