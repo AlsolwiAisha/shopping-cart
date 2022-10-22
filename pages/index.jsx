@@ -16,7 +16,11 @@ const [products, setProducts] = useState();
       .catch((err) => console.error(err));
   },[]);
   if (!products|| products==[]) {
-    return <div>Loading...</div>;
+    return <div className={styles.spinner}>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   }
   return (
     <div>
@@ -27,7 +31,6 @@ const [products, setProducts] = useState();
       </Head>
 
     <main>
-      hello word
      <div><Product products={products}/></div> 
      </main> 
   
