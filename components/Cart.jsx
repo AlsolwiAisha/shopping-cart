@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import update from 'immutability-helper'
 
 const Cart = ({cart}) => {
+ 
   return (
     <div >
       your Cart is:
@@ -9,7 +11,8 @@ const Cart = ({cart}) => {
         <div className='cartMain'>
             <img src={crt.image.img} alt="" />
             <div>{crt.price.price}</div>
-            <div>{crt.title.title}</div>
+            <div className='proTitle'>{crt.title.title}</div>
+            {/* <button onClick={()=>{removeItem({image:{img},price:{price},title:{title}})}} >del</button> */}
         </div>)}
         )}
        
