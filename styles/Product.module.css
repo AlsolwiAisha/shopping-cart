@@ -1,0 +1,126 @@
+
+.proInfo{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .proInfo img{
+    width: 120px;
+    height: 120px;
+  }
+  .allPro{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+      grid-gap: 10px;
+      padding:5px;
+      text-align: center;
+      margin: 0;
+      overflow-x:hidden;
+      overflow-y:scroll;
+     
+    border: solid 1px rgb(221, 221, 221);
+  
+     
+  }
+  .proTitle{
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* From uiverse.io */
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+    padding: 1em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #57506f;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(154, 142, 161, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn:hover {
+    color: #000;
+    background-color: #f0f0f0;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+  }
+ 
+  .wholeCart{
+   width: 100%;
+    display: grid;
+      grid-template-columns: 1fr 1fr ;   
+  }
+  .carts{
+    width: 100%;
+    display: grid;
+      grid-template-columns: 2fr 0.5fr ; 
+  }
+.btn:hover{
+    color: white;
+}  
+.tot{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.button {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   .button:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   .button:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
