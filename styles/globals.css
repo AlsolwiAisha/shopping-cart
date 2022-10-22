@@ -14,50 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
-.proInfo{
+.nav{
   width: 100%;
-  height: 100%;
-  font-size: 20px;
+  height: 50px;
+  background-color: #352a30;
+  color: whitesmoke;
   display: flex;
-  flex-direction: column;
-
-}
-.proInfo img{
-  width: 150px;
-  height: 150px;
-   
-}
-.allPro{
-  width: 100%;
-  height: 100%;
-  display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-	grid-gap: 20px;
-	padding: 20px;
-    text-align: center;
-   
+  justify-content: space-evenly;
+  align-items: center;
 }
 .proTitle{
   white-space: nowrap;
   width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.btn{
-  /* height: 50px;
-  background-color: cadetblue;
-  border: 0ch;
-  margin-top: 5px; */
-}
-.wholeCart{
-/* width: 100%;
-  display: grid;
-	grid-template-columns: 1fr 1fr ;   */
-}
-.carts{
-  width: 100%;
-  display: grid;
-	grid-template-columns: 2fr 0.5fr ; 
 }
 .cartMain{
   width: 100%;
