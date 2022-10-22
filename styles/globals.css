@@ -35,10 +35,7 @@ a {
 	grid-template-columns: 1fr 1fr 1fr ;
   border: solid 1px black;
 }
-.cartMain img{
-  width: 30px;
-  height: 30px;
-}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
