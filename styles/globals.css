@@ -17,11 +17,23 @@ a {
 .nav{
   width: 100%;
   height: 50px;
+  padding: 0% 30px;
   background-color: #352a30;
   color: whitesmoke;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.namLink{
+  width: 100%;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.logo{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 .proTitle{
   white-space: nowrap;
@@ -29,13 +41,31 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.cart{
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+              -15px -15px 30px #ffffff;
+}
 .cartMain{
   width: 100%;
   display: grid;
 	grid-template-columns: 1fr 1fr 1fr ;
   border: solid 1px black;
 }
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #352a30;
+  margin-top: 50px;
+  padding:2% 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
