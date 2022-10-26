@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import img from '../public/4.png'
 import img2 from '../public/5.png'
