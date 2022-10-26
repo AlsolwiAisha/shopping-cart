@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Cart from './cart';
 import Stylse from'../styles/Product.module.css'
-import { useRouter } from 'next/router'
 import Image from 'next/image';
 const Product = ({products}) => {
   const [cart,setCart]=useState([]);
