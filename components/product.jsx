@@ -7,11 +7,11 @@ const Product = ({products}) => {
   const [cart,setCart]=useState([]);
  const[cartnum,setCartnum]=useState(0);
  const [total,setTotal]=useState(0);
-function addcart(img,price,title){
+function addcart(id,img,price,title){
   setTotal(total+price)
   setCartnum(cartnum+1)
    return (
-       setCart([...cart,{image:{img},price:{price},title:{title}}])
+       setCart([...cart,{id:{id},image:{img},price:{price},title:{title}}])
      
    )
 }
@@ -27,7 +27,7 @@ console.log(total)
                  <div className={Stylse.proTitle}>{products.title}</div>
                  <div>{products.price} $</div>
                  <div>{products.category}</div>
-                    <button className={Stylse.btn} onClick={()=>{addcart(products.image  ,products.price,products.title );carts()}} 
+                    <button className={Stylse.btn} onClick={()=>{addcart(products.id,products.image  ,products.price,products.title );carts()}} 
                 >Add to card</button>
                 </div>
            );
